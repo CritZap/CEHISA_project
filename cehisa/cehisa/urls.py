@@ -4,6 +4,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
+	url(r'^index/', include('index.urls')),
     # Examples:
     # url(r'^$', 'cehisa.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
